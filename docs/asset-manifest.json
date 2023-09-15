@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-use-focus-within/static/css/main.a67afe51.css",
+    "main.js": "/react-use-focus-within/static/js/main.747ee7ae.js",
+    "index.html": "/react-use-focus-within/index.html",
+    "main.a67afe51.css.map": "/react-use-focus-within/static/css/main.a67afe51.css.map",
+    "main.747ee7ae.js.map": "/react-use-focus-within/static/js/main.747ee7ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a67afe51.css",
+    "static/js/main.747ee7ae.js"
+  ]
+}
