@@ -1,16 +1,45 @@
-import React from 'react'
-import Example from './lib/Example'
+import React, {useRef} from 'react'
+import useFocusWithin from './lib/useFocusWithin'
 
 function App() {
+   const ref = useRef() as React.RefObject<any>
+   const isFocused = useFocusWithin(ref)
+
    return (
-      <div className="container">
-         <header className="py-5 border-b mb-5">
-            <h1 className="mb-1">React NPM Starter</h1>
-         </header>
-         <div className="flex gap-2">
-            <Example label="Link Button" url="https://github.com/dcooney" />
-            <Example label="Form Button" />
+      <div className="container py-5">
+         <h1>UseFocusWithin</h1>
+         <p>
+            Aenean lacinia <a href="/">bibendum nulla</a> sed consectetur.
+            Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia
+            bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.
+            Donec ullamcorper nulla non metus auctor fringilla.
+         </p>
+         <p>
+            <code>Focused: {isFocused ? 'true' : 'false'}</code>
+         </p>
+         <div className="border rounded my-5 p-5" ref={ref}>
+            <ul>
+               <li>
+                  <a href="/">One</a>
+               </li>
+               <li>
+                  <a href="/">Two</a>
+               </li>
+               <li>
+                  <a href="/">Three</a>
+               </li>
+               <li>
+                  <a href="/">Four</a>
+               </li>
+            </ul>
          </div>
+         <p>
+            Aenean lacinia <a href="/">bibendum nulla</a> sed consectetur.
+            Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia
+            bibendum nulla <a href="/">bibendum nulla</a> sed consectetur.
+            Curabitur blandit tempus porttitor. Donec ullamcorper nulla non
+            metus auctor fringilla.
+         </p>
       </div>
    )
 }
