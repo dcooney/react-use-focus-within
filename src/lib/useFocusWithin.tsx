@@ -7,10 +7,14 @@ export default function useFocusWithin(ref: React.RefObject<any>) {
    const [isFocused, setIsFocused] = useState<boolean | undefined>(false)
 
    useEffect(() => {
+      /**
+       * Focus handler.
+       */
       function handler() {
          if (!ref) return false
          setIsFocused(hasFocusWithin(ref?.current))
       }
+
       // Bind focusin event listener.
       document.addEventListener('focusin', handler, false)
       return () => {
