@@ -1,8 +1,48 @@
 # react-use-focus-within
 
-A react hook for detecting current DOM focus within a given HTML element.
+A react hook for detecting current DOM focus within an HTML element.
 
-More coming soon.
+[![npm](https://img.shields.io/npm/v/react-use-focus-within)](https://www.npmjs.com/package/react-use-focus-within)
+
+## Install
+
+```bash
+# With npm
+npm i react-use-focus-within
+
+# With Yarn
+yarn add react-use-focus-within
+
+```
+
+## Usage
+
+```javascript
+import React from 'react'
+import useFocusWithin from 'react-use-focus-within'
+
+export default function App() {
+   const ref = useRef()
+   const isFocused = useFocusWithin(ref)
+   // console.log(isFocused)
+
+   return (
+      <div ref={ref}>
+         <ul>
+            <li>
+               <a href="https://github.com/">Github</a>
+            </li>
+            <li>
+               <a href="https://npmjs.com/">NPM</a>
+            </li>
+            <li>
+               <a href="https://react.dev/">React</a>
+            </li>
+         </ul>
+      </div>
+   )
+}
+```
 
 ## Contributing
 
