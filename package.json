@@ -1,10 +1,10 @@
 {
-  "name": "react-npm-starter",
+  "name": "react-use-focus-within",
   "version": "1.0.0",
-  "description": "A starter project for publishing NPM packages with React and Typescript.",
-  "homepage": "https://dcooney.github.io/react-npm-starter/",
-  "source": "src/lib/Example.tsx",
-  "types": "dist/lib/Example.d.ts",
+  "description": "A react hook for detecting current DOM focus within a given HTML element.",
+  "homepage": "https://dcooney.github.io/react-use-focus-within/",
+  "source": "src/lib/useFocusWithin.tsx",
+  "types": "dist/lib/useFocusWithin.d.ts",
   "main": "dist/index.js",
   "module": "dist/index.module.js",
   "unpkg": "dist/index.umd.js",
@@ -41,16 +41,17 @@
   "author": "Darren Cooney",
   "license": "MIT",
   "keywords": [
-    "npm starter",
+    "focus",
+    "focus-within",
     "react",
     "typescript"
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/dcooney/react-npm-starter.git"
+    "url": "git+ssh://git@github.com/dcooney/react-use-focus-within.git"
   },
   "bugs": {
-    "url": "https://github.com/dcooney/react-npm-starter/issues"
+    "url": "https://github.com/dcooney/react-use-focus-within/issues"
   },
   "browserslist": {
     "production": [
