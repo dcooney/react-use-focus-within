@@ -16,9 +16,9 @@ function App() {
                <div>
                   <h3>Example</h3>
                   <p className="max-w-[75%]">
-                     Tab or place <button>focus</button> into the list of links
-                     below. Once focus is moved inside the list, application
-                     state will update and return true.
+                     Tab into or place focus in the list of links below. Once
+                     focus is moved inside the list, application state will
+                     update and return true.
                   </p>
                   <p className="text-sm leading-none">
                      Focused:{' '}
