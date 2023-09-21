@@ -6,6 +6,14 @@ import React, {useEffect, useState} from 'react'
 export default function useFocusWithin(ref: React.RefObject<any>) {
    const [isFocused, setIsFocused] = useState<boolean | undefined>(false)
 
+   /**
+    * Check if an element has focus.
+    */
+   function hasFocusWithin(element: HTMLElement): boolean {
+      if (!element || !document) return false
+      return element?.contains(document.activeElement)
+   }
+
    useEffect(() => {
       /**
        * Focus handler.
@@ -24,11 +32,4 @@ export default function useFocusWithin(ref: React.RefObject<any>) {
    }, [ref, setIsFocused])
 
    return isFocused
-}
-/**
- * Check if an element has focus.
- */
-export function hasFocusWithin(element: HTMLElement): boolean {
-   if (!element || !document) return false
-   return element?.contains(document.activeElement)
 }

@@ -1,6 +1,6 @@
 {
   "name": "react-use-focus-within",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A react hook for detecting current DOM focus within a given HTML element.",
   "homepage": "https://dcooney.github.io/react-use-focus-within/",
   "source": "src/lib/useFocusWithin.tsx",
